@@ -124,8 +124,8 @@ class App extends BaseEngine {
 
         //Update preloader content
         $('#preloader .icon').remove();
-        $('#preloader .title').text('Automotive Configurator');
-        $('#preloader .desc').html('A ThreeJS based car configurator. This app is intended for demo purposes only.');
+        $("#preloader .title").text("Neo Motors");
+        $("#preloader .desc").html("le premier constructeur automobile 100% marocain.");
         $('#preloader .btn-main').show();
     }
 

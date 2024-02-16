@@ -101,12 +101,12 @@ export class CameraController {
         this.orbitControls = new OrbitControls(this.orbitCamera, renderer.domElement);
         this.orbitControls.target = ORBIT_CAM_TARGET;
         this.orbitControls.enablePan = false;
-        this.orbitControls.enableZoom = true;
+        this.orbitControls.enableZoom = false;
         this.orbitControls.enableDamping = true;
-        this.orbitControls.minPolarAngle = 0.75; //Upper
+        this.orbitControls.minPolarAngle = 1.4; //Upper
         this.orbitControls.maxPolarAngle = 1.6; //Lower
         this.orbitControls.dampingFactor = 0.07;
-        this.orbitControls.rotateSpeed = 0.07;
+        this.orbitControls.rotateSpeed = 0.5;
         this.orbitControls.minDistance = 16
         this.orbitControls.maxDistance = 32;
         this.orbitControls.autoRotate = true;

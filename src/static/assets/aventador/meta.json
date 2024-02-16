@@ -2,24 +2,60 @@
     "body_colors": {
         "colors": [
             {
-                "name": "Arancio Atlas",
-                "value": "#F77F21"
+                "name": "BLEU CHAOUEN",
+                "value": "#2b67c5"
             },
             {
-                "name": "Arancio Argos",
-                "value": "#FC4705"
+                "name": "BLEU TANGER",
+                "value": "#011035"
             },
             {
-                "name": "Blu Cepheus",
-                "value": "#4393E6"
+                "name": "GRIS NADOR",
+                "value": "#727272"
             },
             {
-                "name": "Rosso Mars",
-                "value": "#BF0012"
+                "name": "ORANGE BERKANE",
+                "value": "#bc4d06"
             },
             {
-                "name": "Bianco Monocerus",
-                "value": "#F2F3F5"
+                "name": "ROUGE LUMIERE RABAT",
+                "value": "#5d0c13"
+            },        
+            {
+                "name": "ROUGE MARRAKECH",
+                "value": "#9c0808"
+            },
+            {
+                "name": "VERT ATLAS",
+                "value": "#334029"
+            },
+            {
+                "name": "VERT DAKHLA",
+                "value": "#6f7f4e"
+            },
+            {
+                "name": "VERT IMOUZZER",
+                "value": "#8aa236"
+            },
+            {
+                "name": "GRIS SMARA",
+                "value": "#1f2325"
+            },
+            {
+                "name": "JAUNE FES",
+                "value": "#020202"
+            },
+            {
+                "name": "BEIGE GUELMIM",
+                "value": "#906647"
+            },        
+            {
+                "name": "BLANC IFRANE",
+                "value": "#ecdedd"
+            },
+            {
+                "name": "BLANC CASABLANCA",
+                "value": "#FFFFFF"
             }
         ],
         "target": "Mt_Body",
@@ -28,7 +64,7 @@
     "mirror_colors": {
         "colors": [
             {
-                "name": "Black",
+                "name": "Bi-Tone",
                 "value": "#121212"
             }
         ],

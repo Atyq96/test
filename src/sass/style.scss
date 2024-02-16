@@ -23,12 +23,18 @@ a {
 }
 
 .no-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
 	                      supported by Chrome and Opera */
 }
 
@@ -61,11 +67,12 @@ a {
     background-color: #eee;
     font-size: 0.75rem;
     background-image: linear-gradient(180deg, #fcfcfc 0, #eee);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcfc",endColorstr="#eeeeee",GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcfcfc", endColorstr="#eeeeee", GradientType=0);
     background-repeat: no-repeat;
     border: 1px solid #d5d5d5;
     outline: none;
 }
+
 /*-------------------------------------
             OVERLAYS
 -------------------------------------*/
@@ -131,6 +138,7 @@ a {
     color: #fff;
 
     .wrapper {
+
         h1,
         h3 {
             font-weight: 300;
@@ -215,6 +223,7 @@ a {
 
     &:hover {
         background: white;
+
         span {
             color: #000;
         }
@@ -222,6 +231,7 @@ a {
 
     &.active {
         background: #ccc;
+
         span {
             color: #333;
         }
@@ -292,12 +302,10 @@ a {
         height: 100%;
         border-radius: 5px;
         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-        background-image: linear-gradient(
-            -45deg,
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.25) 50%,
-            rgba(255, 255, 255, 0.5) 50%
-        );
+        background-image: linear-gradient(-45deg,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.25) 50%,
+                rgba(255, 255, 255, 0.5) 50%);
         -webkit-mask-image: linear-gradient(#000, transparent);
     }
 }
@@ -317,7 +325,109 @@ a {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+/* Navigation Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img {
+    height: 200px;
+    /* Adjust height as needed */
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    /* Adjust the positioning as needed */
+    left: 20px;
+    /* Adjust the positioning as needed */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.icon-bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    /* Adjust the color as needed */
+    transition: background-color 0.3s ease;
+}
+
+/* Hamburger Menu Icon Animation */
+.hamburger-menu.active .icon-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+
+}
+
+.hamburger-menu.active .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .icon-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+
+}
+
+/* Navigation Menu */
+.nav-menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    /* Adjust the width as needed */
+    height: 100%;
+    background-color: #fff;
+    /* Adjust the background color as needed */
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-menu.active {
+    transform: translateX(0);
+}
+
+/* Navigation Menu Links (Example) */
+.nav-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    /* Adjust the color as needed */
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #f0f0f0;
+    /* Adjust the background color as needed */
 }
